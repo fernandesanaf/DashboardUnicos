@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*cores*/
+:root {
+    --bg-color: #f6f6f6;
+    --nav-color: #ffffff;
+    --search-color:#ececec;
+    --txt-color:#6F6F71;
+
+    /*box1*/
+    --div1-color:#5c5574;
+    --div11-color:#796d9d;
+    --div2-color:#00a28a;
+    --div3-color:#4952fd;
+    --div4-color:#ab53db;
+    --div5-color:#ff5b5a;
+
+    --hover-color: #64C17A;
+    --hover-color-light: #d6f6de;
+    --border-hover:#26c96e;
+
+    --btn-caixa1: #F6BE69;
+    --white-color: #FFFFFF;
+    --light-color: #FDFCFF;
+
+    --btn-canceled:#fc403f;
+    --btn-completed:#06a38c;
+    --btn-pending:#ffbc51;
+    --btn-paid:#a2f0e4;
+    --btn-unpaid:#f8b5bb;
+
+    --btn-paid-letter: #3fbfaa;
+    --btn-unpaid-letter:#ff6a71;
+}
+
+*{
+    list-style: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*tamanho das fontes*/
+
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 3.3rem;
+    font-weight:400;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-weight:600;
+}
+
+h3{
+    font-size: 1.2rem;
+    color: var(--txt-color);
+}
+
+h4{
+    font-size: 0.8rem;
+    font-weight:600;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* nav */
+.limenu h3:hover{
+    color: var(--hover-color);
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    background: var(--nav-color);
+    width:25rem; 
+    height: 100%;
+    /* display: flex; */
+     /* border: 1px solid black;  */
+}
+
+
+img{
+    width: 15rem;
+    /* padding-top: 2rem; */
+}
+.menu{
+    display: flex;
+    width: 17rem;
+    gap: 0.3rem;
+    flex-direction: column;
+    padding: 0.5rem 2rem 2rem 4rem;
+}
+
+nav .menu .limenu{
+    width: 15rem;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+nav .menu .limenu:hover{
+   background:var(--hover-color-light);
+    
+}
+
+.amenu{
+    display:flex;
+    align-items:center;
+    color: var(--txt-color);
+    gap: 0.5rem;
+}
+
+.limenu{
+    transition: all .5s;
+    border: 0.5rem solid transparent;
+}
+
+.limenu:hover{
+    background:var(--light-color);
+    cursor: pointer;
+    transition: 0.5s;
+    border-left: 0.5rem solid var(--border-hover);
+}
+
+nav .menu .limenu .amenu .imenu:rover{
+    background:var(--hover-color-light);
+}
+ 
+.limenu:hover h3{
+    color:var(--hover-color);
+}
+
+.limenu:hover i{
+    color:var(--hover-color);
+}
+
+
+header{
+    background: var(--bg-color);
+    height: 14rem;
+    width: 100%;
+}
+
+body{
+    font-family: Poppins;
+    /* gap: 1rem; */
+    display: flex;
+}
+
+/* caixas */
+.container2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    padding-left: 2rem;
+}
+
+.texto{
+    height: 100%;
+    display: flex;
+    padding: 2.5rem 0rem 3rem 3.5rem;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.texto1{
+    padding-bottom: 0.2rem;
+}
+
+
+
+principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.box1{
+    display: flex;
+    /* background: rgb(241, 239, 240); */
+    height: 30rem;
+     /* gap: 1rem; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    background: var(--bg-color);
+    padding: 0.5rem 0.0rem 1.5rem 0rem;
+    
+}
+
+.caixa1{
+    height: 100%;
+    width: 65%;
+    background: linear-gradient(90deg, var(--div1-color) 01%, var(--div11-color) 100%);
+    color: var(--light-color);
+    border-radius: 1rem;
+    /* display: flex; */
+    flex-wrap:wrap;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+.caixa1, .texto1{
+    font-size: 1.2rem;
+}
+
+.caixa1, .valor{
+    font-size: 4.2rem;
+}
+
+.btn-caixa1{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 13rem;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: var(--btn-caixa1);
+    color: var(--light-color);
+}
+
+.btn-caixa1 i{
+    font-size: 2rem;
+}
+
+.quatrocaixas{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 1rem;
+    gap: 2.5rem;
+    
+}
+
+.duascaixas, .duascaixas2{
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa2, .caixa3, .caixa4, .caixa5{
+    width: 65%;
+    height: 100%;
+    border-radius: 1rem;
+    display: flex;
+    /* gap: 3rem; */
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa2{  
+    background: var(--div2-color);  
+}
+
+.caixa3{
+    background: var(--div3-color); 
+}
+
+.caixa4{
+    background: var(--div4-color); 
+}
+
+.caixa5{
+    background: var(--div5-color);
+}
+
+.icone{
+    border: 2px solid var(--light-color);
+    color:var(--light-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iconecaixa{
+    font-size: 9rem;
+}
+.numero{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    color: var(--light-color);
+    padding-left: 4rem;
+}
+
+/* box 2 */
+.box2{
+    /* background: var(--search-color); */
+    display: flex;
+    height: 100%;
+    gap: 1rem;
+    width: 100%; 
+    
+}
+
+.meio1{
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    /* padding-left: 4.5rem; */
+    height: 6rem;
+    align-items: center;
+}
+
+.texto-tabelas{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.btn-recent{
+    display: flex;
+    background: var(--white-color);
+    border-radius: 1rem;
+    border: none;
+    color: var(--text-color);
+    height: 4.5rem;
+    width: 10rem;
+    font-size: 1.3rem;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.icone-recent{
+    font-size: 2.2rem;
+    color: var(--border-hover);
+    font-weight: 200;
+}
+
+.meio2{
+    display: flex;
+    align-items: center;
+    background: var(--bg-color);
+    height: 6rem;
+}
+
+.table1{
+    height: 100%;
+    width: 100%;
+    color: var(--txt-color);
+}
+
+.table2{
+    height: 100%;
+    width: 100%;
+    color: var(--txt-color);
+} 
+
+.box2 table{
+    background: var(--white-color);
+    align-items: center;
+    text-align: center;
+    border-radius: 1.3rem;
+    border-spacing: 0;
+}
+
+.tabela1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+    /* gap: 3rem; */
+}
+
+.tabela2{
+    font-size: 1.4rem;
+    font-weight: 500;
+    /* gap: 1rem; */
+}
+
+tr:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    border-left: 1.5rem solid var(--border-hover);
+    box-shadow: 2px 4px 4px rgb(174, 173, 173);
+}
+
+tr{
+    /* font-size: 1.5rem; */
+    font-weight: 400;
+    transition: all .5s;
+    border: 0.2rem solid transparent;
+    /* border-spacing: none; */
+    
+}
+
+table tr td, th{
+    padding: 1.1rem;
+    border-bottom: 1px solid var(--bg-color);
+}
+
+.checkbox{
+    padding-right: 1rem;
+    padding-left: 4rem;
+    
+}
+
+th{
+    font-size: 1.3rem;
+    font-weight: 700;
+    /* padding-bottom: 2rem;
+    padding-top: 2rem; */
+}
+
+.id, .date,  .email{
+    /* font-size: 1.2rem; */
+    font-weight: 400;
+}
+
+.recipient, .amount{
+    /* font-size: 1.2rem; */
+    font-weight: 800;
+}
+
+.button-table-paid, .button-table-unpaid, .button-table-pending, .button-table-completed, .button-table-canceled{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    justify-content: space-around;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.button-table-paid{
+    width: 6rem;
+    background: var(--btn-paid);
+    color: var(--btn-paid-letter);
+}
+
+.button-table-unpaid{
+    width: 7rem;
+    background: var(--btn-unpaid);
+    color: var(--btn-unpaid-letter);
+}
+
+.button-table-canceled{
+    width: 7.5rem;
+    background: var(--btn-canceled);
+    color: var(--light-color);
+}
+
+.button-table-completed{
+    width: 9.5rem;
+    background: var(--btn-completed);
+    color: var(--light-color);
+}
+
+.button-table-pending{
+    width: 7.5rem;
+    background: var(--btn-pending);
+    color: var(--light-color);
+}
+
+/*header*/
+
+.header1{
+    display:flex;
+    height: 100%;
+    width: 100%;
+}
+
+.txtInvoicing h1{
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--txt-color);
+    padding-top: 2rem;
+}
+
+.txtInvoicing h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.pesquisa{
+    background-color:var(--search-color);
+    border:solid 1px;
+    border-radius:15px;
+    width:35em;
+    height:3rem;
+    align-items:center;
+    margin: 4rem;
+}
+
+.search{
+    background-color:transparent;
+    font-size:18px;
+    border:none;
+    /* width: 100%;
+    height: 100%; */
+}
+.tresIcones{
+    display: flex;
+    /* margin-top: 3rem; */
+    margin: 3rem;
+}
+.iconeheader{
+    border: 1px solid var(--text-color);
+    color:var(--text-color);
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.dados{
+    display: flex;
+    margin-top: 3rem;
+}
+
+.iconedados{
+    color:var(--text-color);
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+.dados1{
+    margin-left: 2rem;
+}
