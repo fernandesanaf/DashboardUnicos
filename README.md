@@ -1,2 +1,2 @@
 # DashboardUnicos
-Atividade de recriação de Dashboard 
+Atividade de recriação de Dashboard feita em HTML e CSS
